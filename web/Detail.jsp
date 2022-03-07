@@ -69,7 +69,7 @@
 
                                         <p class="price-detail-wrap"> 
                                             <span class="price h3 text-warning"> 
-                                                <span class="currency">US $</span><span class="num">${detail.price}</span>
+                                                <span class="num">${detail.price}</span><span class="currency">00 VNĐ</span>
                                             </span> 
                                         </p> <!-- price-detail-wrap .// -->
                                         <dl class="item-property">

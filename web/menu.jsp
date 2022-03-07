@@ -5,6 +5,20 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<style type="text/css">
+    .jumbotron{
+        text-align: center;
+        background-image: url(hehe.jpg);
+        color: #ffffff;
+        font-style: initial;
+        
+    }
+    h1{
+        font-size:90px;
+        font-style: oblique;
+    }
+    
+</style>
 <!--begin of menu-->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
@@ -25,13 +39,13 @@
                             <a class="nav-link" href="#">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="Login.jsp">Login</a>
                         </li>
                     </ul>
 
                     <form action="search" method="post" class="form-inline my-2 my-lg-0">
                         <div class="input-group input-group-sm">
-                            <input name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+                            <input value="${txt}" name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-secondary btn-number">
                                     <i class="fa fa-search"></i>
@@ -46,10 +60,11 @@
                 </div>
             </div>
         </nav>
-        <section class="jumbotron text-center">
+        <section class="jumbotron">
             <div class="container">
-                <h1 class="jumbotron-heading">Triệu Foods</h1>
-                <p class="lead text-muted mb-0">Uy tín tạo nên thương hiệu</p>
+                <h1 class="jumbotron-heading"> Triệu Ẩm Thực</h1>
+                <p class="lead text-muted mb-0-heading"> </p>
+                <p class="lead text-muted mb-0-heading">  </p>
             </div>
         </section>
         <!--end of menu-->
