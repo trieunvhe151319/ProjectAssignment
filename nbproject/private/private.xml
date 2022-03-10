@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/src/java/entity/Category.java</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/web/Home.jsp</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/src/java/control/CategoryControl.java</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/web/Left.jsp</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/src/java/control/DetailControl.java</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/web/menu.jsp</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/web/Detail.jsp</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/web/Footer.jsp</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/src/java/entity/Product.java</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/src/java/dao/DAO.java</file>
-            <file>file:/C:/Users/trieu/Desktop/ProjectAssignment/src/java/control/HomeControl.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
