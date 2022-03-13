@@ -170,7 +170,7 @@ public class DAO {
         try {
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
-            ps.setString(1, user);
+            ps.setString(1, user);        
            
             rs = ps.executeQuery();
             while(rs.next()){
@@ -191,7 +191,7 @@ public class DAO {
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
             ps.setString(1, user);
-            ps.setString(1, pass);
+            ps.setString(2, pass);
             ps.executeUpdate();
         } catch (Exception e) {
         }

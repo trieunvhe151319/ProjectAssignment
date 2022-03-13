@@ -4,6 +4,7 @@
     Author     : trieu
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <style type="text/css">
     .jumbotron{
@@ -33,14 +34,22 @@
                             <a class="nav-link" href="#">Manager Account</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Hello</a>
+                            <a class="nav-link" href="#">Manager Product</a>
+                        </li>
+                        
+                        <c:if test="${sessionScope.acc != null}"> 
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Hello ${sessionScope.acc.user}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
+                            <a class="nav-link" href="logout">Logout</a>
                         </li>
+                        </c:if>
+                        <c:if test="${sessionScope.acc == null}">                            
                         <li class="nav-item">
                             <a class="nav-link" href="Login.jsp">Login</a>
                         </li>
+                        </c:if>
                     </ul>
 
                     <form action="search" method="post" class="form-inline my-2 my-lg-0">
