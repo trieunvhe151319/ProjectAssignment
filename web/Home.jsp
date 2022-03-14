@@ -20,8 +20,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="Home.jsp">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
-                            <li class="breadcrumb-item active" aria-current="#">Sub-category</li>
+<!--                            <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
+                            <li class="breadcrumb-item active" aria-current="#">Sub-category</li>-->
                         </ol>
                     </nav>
                 </div>
@@ -42,7 +42,7 @@
                                         <p class="card-text show_txt">${o.title}</p>
                                         <div class="row">
                                             <div class="col">
-                                                <p class="btn btn-danger btn-block">${o.price} $</p>
+                                                <p class="btn btn-danger btn-block">${o.price}00 VND</p>
                                             </div>
                                             <div class="col">
                                                 <a href="#" class="btn btn-success btn-block">Add to cart</a>
@@ -53,12 +53,33 @@
                             </div>
                         </c:forEach>
                     </div>
+<!--                    <button onclick="loadMore()" class="btn btn-primary">Load more</button>-->
                 </div>
 
             </div>
         </div>
 
                             <jsp:include page="Footer.jsp" ></jsp:include>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--        <script>
+                        function loadMore() {
+                            var amount = document.getElementsByClassName("product").length;
+                            $.ajax({
+                                url: "/Project_banhang/load",
+                                type: "get", //send it through get method
+                                data: {
+                                    exits: amount
+                                },
+                                success: function (data) {
+                                    var row = document.getElementById("content");
+                                    row.innerHTML += data;
+                                },
+                                error: function (xhr) {
+                                    //Do Something to handle error
+                                }
+                            });
+                        }
+        </script>  -->
     </body>
 </html>
 

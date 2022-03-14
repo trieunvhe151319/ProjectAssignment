@@ -254,6 +254,74 @@ public class DAO {
         } catch (Exception e) {
         }
     }
+//        public List<Product> getTop3() {
+//        List<Product> list = new ArrayList<>();
+//        String query = "select top 3 * from product";
+//        try {
+//            conn = new DBContext().getConnection();
+//            ps = conn.prepareStatement(query);
+//            rs = ps.executeQuery();
+//            while (rs.next()) {
+//                list.add(new Product(rs.getInt(1),
+//                        rs.getString(2),
+//                        rs.getString(3),
+//                        rs.getDouble(4),
+//                        rs.getString(5),
+//                        rs.getString(6)));
+//            }
+//        } catch (Exception e) {
+//        }
+//        return list;
+//    }
+//     public List<Product> getNext3Product(int amount) {
+//        List<Product> list = new ArrayList<>();
+//        String query = "SELECT *\n"
+//                + "  FROM product\n"
+//                + " ORDER BY id\n"
+//                + "OFFSET ? ROWS\n"
+//                + " FETCH NEXT 3 ROWS ONLY";
+//        try {
+//            conn = new DBContext().getConnection();
+//            ps = conn.prepareStatement(query);
+//            ps.setInt(1, amount);
+//            rs = ps.executeQuery();
+//            while (rs.next()) {
+//                list.add(new Product(rs.getInt(1),
+//                        rs.getString(2),
+//                        rs.getString(3),
+//                        rs.getDouble(4),
+//                        rs.getString(5),
+//                        rs.getString(6)));
+//            }
+//        } catch (Exception e) {
+//        }
+//        return list;
+//    }
+     //Chinh sua san pham
+     public void editProduct(String name, String image, String price,
+            String title, String description, String category, String pid) {
+        String query = "update product\n"
+                + "set [name] = ?,\n"
+                + "[image] = ?,\n"
+                + "price = ?,\n"
+                + "title = ?,\n"
+                + "[description] = ?,\n"
+                + "cateID = ?\n"
+                + "where id = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, name);
+            ps.setString(2, image);
+            ps.setString(3, price);
+            ps.setString(4, title);
+            ps.setString(5, description);
+            ps.setString(6, category);
+            ps.setString(7, pid);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
 
    
 
