@@ -121,6 +121,7 @@ public class DAO {
         }
         return null;
     }
+         //Tim kiem
           public List<Product> searchByName(String txtSearch) {
         List<Product> list = new ArrayList<>();
         String query = "select * from product\n"
@@ -142,6 +143,7 @@ public class DAO {
         }
         return list;
     }
+    //Dang nhap
     public Account login(String user, String pass){
         String query ="select * from Account\n"
                       + "where [user] = ?\n"
@@ -163,6 +165,7 @@ public class DAO {
         }
         return null;
     }
+    //Check account
     public Account checkAccountExist(String user){
         String query ="select * from Account\n"
                       + "where [user] = ?\n";
@@ -184,6 +187,7 @@ public class DAO {
         }
         return null;
     }
+    //Dang ki
     public void signup(String user, String pass){
         String query = "insert into Account\n" 
                      +   "values(?,?,0,0)";
@@ -192,6 +196,60 @@ public class DAO {
             ps = conn.prepareStatement(query);
             ps.setString(1, user);
             ps.setString(2, pass);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
+    //Quan li san pham by sell_ID
+    public List<Product> getProductBySellID(int id) {
+        List<Product> list = new ArrayList<>();
+        String query = "select * from product\n"
+                + "where sell_ID = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                list.add(new Product(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getDouble(4),
+                        rs.getString(5),
+                        rs.getString(6)));
+            }
+        } catch (Exception e) {
+        }
+        return list;
+    }
+    //Xoa san pham trong manager product
+    public void deleteProduct(String pid) {
+        String query = "delete from product\n"
+                + "where id = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, pid);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
+    //Them san pham
+    public void insertProduct(String name, String image, String price,
+            String title, String description, String category, int sid) {
+        String query = "INSERT [dbo].[product] \n"
+                + "([name], [image], [price], [title], [description], [cateID], [sell_ID])\n"
+                + "VALUES(?,?,?,?,?,?,?)";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, name);
+            ps.setString(2, image);
+            ps.setString(3, price);
+            ps.setString(4, title);
+            ps.setString(5, description);
+            ps.setString(6, category);
+            ps.setInt(7, sid);
             ps.executeUpdate();
         } catch (Exception e) {
         }

@@ -30,12 +30,16 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
                     <ul class="navbar-nav m-auto">
+                        <c:if test="${sessionScope.acc.isAdmin ==1}"> 
                         <li class="nav-item">
                             <a class="nav-link" href="#">Manager Account</a>
                         </li>
+                        </c:if>
+                         <c:if test="${sessionScope.acc.isSell ==1}"> 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Manager Product</a>
+                            <a class="nav-link" href="manager">Manager Product</a>
                         </li>
+                         </c:if>
                         
                         <c:if test="${sessionScope.acc != null}"> 
                         <li class="nav-item">
