@@ -85,13 +85,29 @@
                                 <div class="p-4">
                                     <ul class="list-unstyled mb-4">
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${total}00 VND</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>Free ship</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT (10%)</strong><strong>${vat}00</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Thuế VAT</strong><strong>Free</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Ship (10%)</strong><strong>${vat}00</strong></li>
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
                                             <h5 class="font-weight-bold">${sum} VND</h5>
                                         </li>
-                                    </ul><a href="order" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
-                                </div>
+                                </ul>
+                                        <div>
+                                        <a type="button" onclick="mua()" href="order" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
+                               <script type="text/javascript">
+
+         function mua()  {
+
+              var result = confirm("Xác nhận thanh toán?");
+
+              if(result)  {
+                  alert("Thank you quý khách!");
+              } else {
+                  alert("Bye!");
+              }
+         }
+
+      </script>
+                                        </div>
                             </div>
                         </div>
 

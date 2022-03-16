@@ -50,10 +50,17 @@
                                             <div class="col">
                                                 <p class="btn btn-danger btn-block">${o.price}00 VND</p>
                                             </div>
+                                            
                                             <div class="col">
-                                                <a  href="cart?id=${o.id}" class="btn btn-success btn-block">Add to cart</a>
-                                                
+                                                <a type="button" onclick="cart()" id="btn" href="cart?id=${o.id}" class="btn btn-success btn-block">Add to cart</a>
+                                                <script type="text/javascript">
+         function cart()  {
+               alert("Mua món này !");    
+         }
+
+      </script>
                                             </div>
+                                                
                                         </div>
                                     </div>
                                 </div>
