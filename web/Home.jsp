@@ -12,6 +12,12 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
+    <style type="text/css">
+        .breadcrumb{
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
     <body>
         <jsp:include page="menu.jsp"></jsp:include>
         <div class="container">
@@ -19,8 +25,8 @@
                 <div class="col">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="Home.jsp">Home</a></li>
-<!--                            <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
+                            <li class="breadcrumb-item"><a>Nếu bạn đói bụng   -   Hãy đến với chúng tôi   -   Phục vụ tận tâm - Uy tín số một   -   Giao hàng tận nơi</a></li>
+<!--                            <li class="breadcrumb-item"><a href="category">Danh mục</a></li>
                             <li class="breadcrumb-item active" aria-current="#">Sub-category</li>-->
                         </ol>
                     </nav>
@@ -45,7 +51,8 @@
                                                 <p class="btn btn-danger btn-block">${o.price}00 VND</p>
                                             </div>
                                             <div class="col">
-                                                <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                                                <a  href="cart?id=${o.id}" class="btn btn-success btn-block">Add to cart</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +67,7 @@
         </div>
 
                             <jsp:include page="Footer.jsp" ></jsp:include>
-                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 <!--        <script>
                         function loadMore() {
                             var amount = document.getElementsByClassName("product").length;

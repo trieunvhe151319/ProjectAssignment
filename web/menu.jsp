@@ -23,7 +23,7 @@
 <!--begin of menu-->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="home">Foods</a>
+                <a class="navbar-brand" href="home">FOODS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <a class="btn btn-success btn-sm ml-3" href="Cart.jsp">
-                            <i class="fa fa-shopping-cart"></i> Cart
+                            <a class="nav-link" href="print">Cart</a>
                             <span class="badge badge-light"></span>
                         </a>
                     </form>

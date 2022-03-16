@@ -29,6 +29,14 @@ public class Product {
         this.description = description;
     }
 
+    public Product(int aInt, String string, String string0, double aDouble, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Product(int aInt, String string, String string0, double aDouble) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getId() {
         return id;
     }
