@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-12 copyright mt-3">
                         <p class="float-left">
-                            <a href="#">Back to top</a>
+                            <a href="#">Lên đầu trang</a>
                         </p>
                         
                     </div>

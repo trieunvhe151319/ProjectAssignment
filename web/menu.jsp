@@ -75,7 +75,7 @@
         </nav>
         <section class="jumbotron">
             <div class="container">
-                <h1 class="jumbotron-heading"> Triệu Ẩm Thực</h1>
+                <h1 class="jumbotron-heading"> Triệu Shop Foods</h1>
                 <p class="lead text-muted mb-0-heading"> </p>
                 <p class="lead text-muted mb-0-heading">  </p>
             </div>
