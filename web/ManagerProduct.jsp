@@ -28,11 +28,11 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Manage <b>Product</b></h2>
+                            <h2>Sản phẩm <b>Đang bán</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addEmployeeModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Product</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+                            <a href="#addEmployeeModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm món mới</span></a>
+                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Xóa</span></a>						
                         </div>
                     </div>
                 </div>
@@ -46,10 +46,10 @@
                                 </span>
                             </th>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Image</th>
-                            <th>Price</th>
-                            <th>Actions</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Hình ảnh</th>
+                            <th>Giá</th>
+                            <th>Edits</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,7 +76,7 @@
                     </tbody>
                 </table>
             </div>
-            <a href="home"><button type="button" class="btn btn-primary">Back to home</button>
+<!--            <a href="home"><button type="button" class="btn btn-primary">Back to home</button>-->
 
         </div>
         <!-- Edit Modal HTML -->

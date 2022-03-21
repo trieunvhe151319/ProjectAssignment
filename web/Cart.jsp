@@ -85,10 +85,10 @@
                                 <div class="p-4">
                                     <ul class="list-unstyled mb-4">
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${total}00 VND</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Thuế VAT</strong><strong>Free</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Ship (10%)</strong><strong>${vat}00</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Địa chỉ giao hàng</strong> <input type="text" aria-describedby="button-addon3" ></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Ship</strong><strong>${vat}00</strong></li>
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
-                                            <h5 class="font-weight-bold">${sum} VND</h5>
+                                            <h5 class="font-weight-bold">${sum}00 VND</h5>
                                         </li>
                                 </ul>
                                         <div>

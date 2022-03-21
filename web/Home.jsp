@@ -52,7 +52,7 @@
                                             </div>
                                             
                                             <div class="col">
-                                                <a type="button" onclick="cart()" id="btn" href="cart?id=${o.id}" class="btn btn-success btn-block">Add to cart</a>
+                                                <a type="button" onclick="cart()" id="btn" href="cart?id=${o.id}" class="btn btn-success btn-block">Thêm vào giỏ hàng</a>
                                                 <script type="text/javascript">
          function cart()  {
                alert("Mua món này !");    

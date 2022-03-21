@@ -37,21 +37,21 @@
                         </c:if>
                          <c:if test="${sessionScope.acc.isSell ==1}"> 
                         <li class="nav-item">
-                            <a class="nav-link" href="manager">Manager Product</a>
+                            <a class="nav-link" href="manager">Sản phẩm của bạn</a>
                         </li>
                          </c:if>
                         
                         <c:if test="${sessionScope.acc != null}"> 
                         <li class="nav-item">
-                                <a class="nav-link" href="#">Hello ${sessionScope.acc.user}</a>
+                                <a class="nav-link" href="#">Xin chào ${sessionScope.acc.user}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="logout">Logout</a>
+                            <a class="nav-link" href="logout">Đăng xuất</a>
                         </li>
                         </c:if>
                         <c:if test="${sessionScope.acc == null}">                            
                         <li class="nav-item">
-                            <a class="nav-link" href="Login.jsp">Login</a>
+                            <a class="nav-link" href="Login.jsp">Đăng nhập</a>
                         </li>
                         </c:if>
                     </ul>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <a class="btn btn-success btn-sm ml-3" href="Cart.jsp">
-                            <a class="nav-link" href="print">Cart</a>
+                            <a class="nav-link" href="print">Giỏ hàng</a>
                             <span class="badge badge-light"></span>
                         </a>
                     </form>
