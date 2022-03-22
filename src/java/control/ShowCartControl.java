@@ -58,8 +58,8 @@ public class ShowCartControl extends HttpServlet {
         }
         request.setAttribute("list", list);
         request.setAttribute("total", total);
-        request.setAttribute("vat", 0.1 * total);
-        request.setAttribute("sum", 1.1 * total);
+        request.setAttribute("vat", 0 * total);
+        request.setAttribute("sum", 1 * total);
         request.getRequestDispatcher("Cart.jsp").forward(request, response);
     }
 
