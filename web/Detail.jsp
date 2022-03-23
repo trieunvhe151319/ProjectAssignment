@@ -78,6 +78,12 @@
                                                     ${detail.description}
                                                 </p></dd>
                                         </dl>
+                                                <dl class="item-property">
+                                            <dt>Sublier</dt>
+                                            <dd><p>
+                                                    ${detail.sublier}
+                                                </p></dd>
+                                        </dl>
 
                                         <hr>
                                         <div class="row">

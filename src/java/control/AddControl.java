@@ -41,6 +41,7 @@ public class AddControl extends HttpServlet {
         String pprice = request.getParameter("price");
         String ptitle = request.getParameter("title");
         String pdescription = request.getParameter("description");
+        String psublier = request.getParameter("sublier");
         String pcategory = request.getParameter("category");
         HttpSession session = request.getSession();
         Account a = (Account) session.getAttribute("acc");
@@ -48,7 +49,7 @@ public class AddControl extends HttpServlet {
         
         
         DAO dao = new DAO();
-        dao.insertProduct(pname, pimage, pprice, ptitle, pdescription, pcategory, sid);
+        dao.insertProduct(pname, pimage, pprice, ptitle, pdescription,psublier, pcategory, sid);
         response.sendRedirect("manager");
     }
 

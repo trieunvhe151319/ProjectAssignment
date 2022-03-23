@@ -16,25 +16,19 @@ public class Product {
     private double price;
     private String title;
     private String description;
+    private String sublier;
 
     public Product() {
     }
 
-    public Product(int id, String name, String image, double price, String title, String description) {
+    public Product(int id, String name, String image, double price, String title, String description, String sublier) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.price = price;
         this.title = title;
         this.description = description;
-    }
-
-    public Product(int aInt, String string, String string0, double aDouble, int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Product(int aInt, String string, String string0, double aDouble) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.sublier = sublier;
     }
 
     public int getId() {
@@ -85,10 +79,20 @@ public class Product {
         this.description = description;
     }
 
+    public String getSublier() {
+        return sublier;
+    }
+
+    public void setSublier(String sublier) {
+        this.sublier = sublier;
+    }
+
     @Override
     public String toString() {
-        return "Product{" + "id=" + id + ", name=" + name + ", image=" + image + ", price=" + price + ", title=" + title + ", description=" + description + '}';
+        return "Product{" + "id=" + id + ", name=" + name + ", image=" + image + ", price=" + price + ", title=" + title + ", description=" + description + ", sublier=" + sublier + '}';
     }
+    
+
     
 }
 

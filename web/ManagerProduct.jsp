@@ -48,6 +48,7 @@
                             <th>ID</th>
                             <th>Tên sản phẩm</th>
                             <th>Hình ảnh</th>
+                            <th>Sublier</th>
                             <th>Giá</th>
                             <th>Edits</th>
                         </tr>
@@ -66,18 +67,20 @@
                                 <td>
                                     <img src="${o.image}">
                                 </td>
+                                <td>${o.sublier}</td>
                                 <td>${o.price}00 VND</td>
                                 <td>
                                     <a href="loadProduct?pid=${o.id}"  class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                    <a href="delete?pid=${o.id}" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                    <div>
+                                        <a href="delete?pid=${o.id}" class="delete" onclick="xoa()" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                   
+                                    <div/>
                                 </td>
                             </tr>
                         </c:forEach>
                     </tbody>
                 </table>
-            </div>
-<!--            <a href="home"><button type="button" class="btn btn-primary">Back to home</button>-->
-
+            </div>           
         </div>
         <!-- Edit Modal HTML -->
         <div id="addEmployeeModal" class="modal fade">
@@ -110,6 +113,10 @@
                                 <textarea name="description" class="form-control" required></textarea>
                             </div>
                             <div class="form-group">
+                                <label>Sublier</label>
+                                <textarea name="sublier" class="form-control" required></textarea>
+                            </div>
+                            <div class="form-group">
                                 <label>Danh Mục</label>
                                 <select name="category" class="form-select" aria-label="Default select example">
                                     <c:forEach items="${listCC}" var="o">
@@ -131,4 +138,7 @@
         
     <script src="js/manager.js" type="text/javascript"></script>
 </body>
+<!--<div style="text-align: center"> 
+<a href="home" ><button style="text-align: center" type="button" class="btn btn-primary">Back to home</button>
+<div/>-->
 </html>

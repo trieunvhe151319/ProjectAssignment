@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Giỏ hàng</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     </head>
@@ -50,7 +50,7 @@
                                                             </div>
                                                         </div>
                                                     </th>
-                                                    <td class="align-middle"><strong>${o.price}</strong></td>
+                                                    <td class="align-middle"><strong>${o.price}00</strong></td>
                                                     <td class="align-middle">
                                                         <a href="sub?id=${o.id}"><button class="btnSub">-</button></a> <strong>${o.amount}</strong>
                                                         <a href="cart?id=${o.id}"><button class="btnAdd">+</button></a>
@@ -85,7 +85,8 @@
                                 <div class="p-4">
                                     <ul class="list-unstyled mb-4">
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${total}00 VND</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tện người nhận</strong> <input type="text" aria-describedby="button-addon3" ></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tên người nhận</strong> <input type="text" aria-describedby="button-addon3" ></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Số điện thoại</strong> <input type="text" aria-describedby="button-addon3" ></li>
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Địa chỉ giao hàng</strong> <input type="text" aria-describedby="button-addon3" ></li>
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Ship</strong><strong>Free ship</strong></li>
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>

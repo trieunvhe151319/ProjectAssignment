@@ -39,7 +39,7 @@
                     <div class="modal-content">
                         <form action="edit" method="post">
                             <div class="modal-header">						
-                                <h4 class="modal-title">Add Product</h4>
+                                <h4 class="modal-title">Edit</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">					
@@ -68,9 +68,13 @@
                                     <textarea name="description" class="form-control" required>${detail.description}</textarea>
                                 </div>
                                 <div class="form-group">
+                                    <label>Sublier</label>
+                                    <input value="${detail.sublier}" name="sublier" type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
                                     <label>Category</label>
                                     <select name="category" class="form-select" aria-label="Default select example">
-                                        <c:forEach items="${listCC}" var="o">
+                                        <c:forEach items="${listC}" var="o">
                                             <option value="${o.cid}">${o.cname}</option>
                                         </c:forEach>
                                     </select>
